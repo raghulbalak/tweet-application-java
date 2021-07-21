@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  app-build:
+    image: test
+    build: 
+      context: ./
+    restart: always
+    depends_on:
+      - mongo-file
+    ports:
+      - 8082:8090
+  mongo-file:
+    image: mongo:3.2.4
+    volumes:
+      - /data/mongodb
