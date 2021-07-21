@@ -31,4 +31,4 @@ commands:
 artifacts:
 files:
 - imagedefinitions.json
-- target/tweet-application.jar
+- target/tweet-0.0.1-SNAPSHOT.jar
